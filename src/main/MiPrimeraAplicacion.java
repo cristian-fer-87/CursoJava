@@ -8,6 +8,7 @@ package main;
 //Importamos la clase Persona
 import java.util.LinkedList;
 import java.util.List;
+import modelo.Empleado;
 import modelo.Mascota;
 import modelo.Persona;
 
@@ -56,7 +57,10 @@ public class MiPrimeraAplicacion {
   
         //System.out.println("Hola soy "+otraPersona.getNombre());
         //System.out.println(otraPersona.soyMasAltoQue(unaPersona));
-        System.out.println(otraPersona.presentacion());
+        //System.out.println(otraPersona.presentacion());
+        
+        Empleado empleado = new Empleado("Gerente", 2500.00, "Esteban", 1.80);
+        System.out.println("Soy "+empleado.getNombre()+" y gano $"+empleado.getSueldo());
     }
     
 }
