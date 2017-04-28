@@ -93,4 +93,17 @@ public class Persona {
                 this.padre.getNombre();
         return retorno;
     }
+    
+    public String pruebaExcepcion(){
+        String retorno = "";
+        try {
+            retorno = "el resultado de 20/2 es: "+20/0;//No se puede dividir por cero.
+        } catch (Exception e) {
+            System.out.println("Hubo un error.");
+        } 
+        finally{
+            System.out.println("Esto se ejecuta siempre");
+        }
+        return retorno;
+    }
 }

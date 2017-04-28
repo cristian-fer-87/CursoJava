@@ -60,7 +60,9 @@ public class MiPrimeraAplicacion {
         //System.out.println(otraPersona.presentacion());
         
         Empleado empleado = new Empleado("Gerente", 2500.00, "Esteban", 1.80);
-        System.out.println("Soy "+empleado.getNombre()+" y gano $"+empleado.getSueldo());
+        //System.out.println("Soy "+empleado.getNombre()+" y gano $"+empleado.getSueldo());
+        
+        System.out.println(empleado.pruebaExcepcion());
     }
     
 }
